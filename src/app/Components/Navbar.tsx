@@ -1,8 +1,10 @@
-import Link from 'next/link'; // Importamos el componente de navegación
+import Link from 'next/link';
+
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-gray-800 p-4 rounded-xl mb-10 max-w-7xl mx-auto shadow-lg border border-gray-700">
-        <h1 className="text-xl font-black text-white tracking-wider p-4">
+    <nav className="w-full bg-gray-800 p-4 shadow-lg border-b border-gray-700 mb-10">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+        <h1 className="text-xl font-black text-white tracking-wider">
           RICK Y MORTY
         </h1>
         
@@ -12,6 +14,7 @@ export default function Navbar() {
         >
           <span>⭐️</span> Mis Favoritos
         </Link>
-      </nav>
-  )
+      </div>
+    </nav>
+  );
 }
